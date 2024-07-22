@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{915AED7C-DD3A-42EA-8215-8BBBB188B739}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthManagementSystem.Domain", "BirthManagementSystem.Domain\BirthManagementSystem.Domain.csproj", "{C7195C59-8045-45B8-8027-382DBEBB3C5D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthManagementSystem.Application", "BirthManagementSystem.Application\BirthManagementSystem.Application.csproj", "{7D43A732-89E1-4ECF-AC40-7E78D3EB3323}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BirthManagementSystem.Infrastructure", "BirthManagementSystem.Infrastructure\BirthManagementSystem.Infrastructure.csproj", "{A9DB8DFB-39D8-4F26-B960-8EE5741209B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirthManagementSystem.Presentation", "BirthManagementSystem.Presentation\BirthManagementSystem.Presentation.csproj", "{A679B630-A069-4A3B-84C3-69EB175D12AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirthManagementSystem.Api", "BirthManagementSystem.Api\BirthManagementSystem.Api.csproj", "{9ABD79B7-F536-4540-A605-6A59E078444F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7195C59-8045-45B8-8027-382DBEBB3C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7195C59-8045-45B8-8027-382DBEBB3C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7195C59-8045-45B8-8027-382DBEBB3C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7195C59-8045-45B8-8027-382DBEBB3C5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D43A732-89E1-4ECF-AC40-7E78D3EB3323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D43A732-89E1-4ECF-AC40-7E78D3EB3323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D43A732-89E1-4ECF-AC40-7E78D3EB3323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D43A732-89E1-4ECF-AC40-7E78D3EB3323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9DB8DFB-39D8-4F26-B960-8EE5741209B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9DB8DFB-39D8-4F26-B960-8EE5741209B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9DB8DFB-39D8-4F26-B960-8EE5741209B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9DB8DFB-39D8-4F26-B960-8EE5741209B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A679B630-A069-4A3B-84C3-69EB175D12AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A679B630-A069-4A3B-84C3-69EB175D12AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A679B630-A069-4A3B-84C3-69EB175D12AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A679B630-A069-4A3B-84C3-69EB175D12AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ABD79B7-F536-4540-A605-6A59E078444F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ABD79B7-F536-4540-A605-6A59E078444F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ABD79B7-F536-4540-A605-6A59E078444F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ABD79B7-F536-4540-A605-6A59E078444F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C7195C59-8045-45B8-8027-382DBEBB3C5D} = {915AED7C-DD3A-42EA-8215-8BBBB188B739}
+		{7D43A732-89E1-4ECF-AC40-7E78D3EB3323} = {915AED7C-DD3A-42EA-8215-8BBBB188B739}
+		{A9DB8DFB-39D8-4F26-B960-8EE5741209B7} = {915AED7C-DD3A-42EA-8215-8BBBB188B739}
+		{A679B630-A069-4A3B-84C3-69EB175D12AB} = {915AED7C-DD3A-42EA-8215-8BBBB188B739}
+		{9ABD79B7-F536-4540-A605-6A59E078444F} = {915AED7C-DD3A-42EA-8215-8BBBB188B739}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0487061-51F5-4825-832D-98B5B8B7EA4D}
+	EndGlobalSection
+EndGlobal
