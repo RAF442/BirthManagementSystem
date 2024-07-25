@@ -4,6 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace BirthManagementSystem.Infrastructure.Config;
 
+/// <summary>
+/// Konfiguracja encji ApgarScore
+/// </summary>
 public class ApgarScoreConfiguration : BaseEntityConfiguration<ApgarScore>
 {
     public override void Configure(EntityTypeBuilder<ApgarScore> builder)

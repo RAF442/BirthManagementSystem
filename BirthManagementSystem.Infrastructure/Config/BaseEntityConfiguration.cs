@@ -4,6 +4,10 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace BirthManagementSystem.Infrastructure.Config;
 
+/// <summary>
+/// Konfiguracja klasy BaseEntity
+/// </summary>
+/// <typeparam name="TBase"></typeparam>
 public abstract class BaseEntityConfiguration<TBase> : IEntityTypeConfiguration<TBase> where TBase : Entity
 {
     public virtual void Configure(EntityTypeBuilder<TBase> builder)

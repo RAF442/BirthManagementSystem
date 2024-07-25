@@ -18,6 +18,9 @@ public static class Extensions
 
         services.AddScoped<IApgarScoreRepository, ApgarScoreRepository>();
 
+        /// <summary>
+        /// Dodanie kontekstu połączenia z bazą danych do domyślnego kontetenera IoC
+        /// </summary>
         services.AddDbContext<BirthManagementSystemDbContext>(ctx => ctx.UseSqlServer(configuration.GetConnectionString("BirthManagementSystemCS")));
 
         return services;

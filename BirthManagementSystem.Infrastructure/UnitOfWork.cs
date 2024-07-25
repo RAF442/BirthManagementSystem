@@ -9,17 +9,29 @@ internal class UnitOfWork : IUnitOfWork
 {
     private readonly BirthManagementSystemDbContext _dbContext;
 
+    /// <summary>
+    /// Wstrzyknięcie kontekstu połączenia do bazy danych
+    /// </summary>
+    /// <param name="dbContext"></param>
     public UnitOfWork(BirthManagementSystemDbContext dbContext)
     {
         _dbContext = dbContext;
     }
 
+    /// <summary>
+    /// Implementacja metody do zapisywania zmian na bazie danych
+    /// </summary>
+    /// <param name="cancellationToken">Token anulowania operacji asynchronicznej</param>
+    /// <returns></returns>
     public async Task SaveChangesAsync(CancellationToken cancellationToken = default)
     {
         UpdateAuditableEntities();
         await _dbContext.SaveChangesAsync(cancellationToken);
     }
 
+    /// <summary>
+    /// Metoda ustawiająca czas dodania lub modyfikacji encji
+    /// </summary>
     private void UpdateAuditableEntities()
     {
         var entries = _dbContext

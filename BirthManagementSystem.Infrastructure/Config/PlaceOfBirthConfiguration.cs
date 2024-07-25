@@ -4,6 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace BirthManagementSystem.Infrastructure.Config;
 
+/// <summary>
+/// Konfiguracja encji PlaceOfBirth
+/// </summary>
 public class PlaceOfBirthConfiguration : BaseEntityConfiguration<PlaceOfBirth>
 {
     public override void Configure(EntityTypeBuilder<PlaceOfBirth> builder)

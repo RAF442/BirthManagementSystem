@@ -5,6 +5,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace BirthManagementSystem.Infrastructure.Config;
 
+/// <summary>
+/// Konfiguracja encji Baby
+/// </summary>
 public class BabyConfiguration : BaseEntityConfiguration<Baby>
 {
     public override void Configure(EntityTypeBuilder<Baby> builder)
