@@ -17,6 +17,13 @@ public class GetApgarScoreBabiesQueryHandler : IQueryHandler<GetApgarScoreBabies
         _mapper = mapper;
     }
 
+    /// <summary>
+    /// Pobranie wyniku w skali Apgar po identyfikatorze wraz z dziećmi, które otrzymały dany wynik
+    /// </summary>
+    /// <param name="request"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
+    /// <exception cref="ApgarScoreNotFoundException"></exception>
     public async Task<IEnumerable<BabyDto>> Handle(GetApgarScoreBabiesQuery request, CancellationToken cancellationToken)
     {
         var apgar_score = await _apgarScoreRepository.GetByIdAsyncWithBabiesAsync(request.Id, cancellationToken);

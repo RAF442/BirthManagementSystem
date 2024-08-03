@@ -16,6 +16,12 @@ internal class GetBabyByIdQueryHandler : IRequestHandler<GetBabyByIdQuery, BabyD
         _mapper = mapper;
     }
 
+    /// <summary>
+    /// Obsługa metody pobierającej dziecko po identyfikatorze
+    /// </summary>
+    /// <param name="request"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
     public async Task<BabyDetailsDto> Handle(GetBabyByIdQuery request, CancellationToken cancellationToken)
     {
         var baby = await _babyRepository.GetByIdAsync(request.Id, cancellationToken);

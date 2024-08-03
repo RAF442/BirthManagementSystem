@@ -16,6 +16,12 @@ public class GetBabiesWithDetailsQueryHandler : IQueryHandler<GetBabiesWithDetai
         _mapper = mapper;
     }
 
+    /// <summary>
+    /// Obsługa metody zwracającej wszystkie dzieci ze szczegółowymi informacjami
+    /// </summary>
+    /// <param name="request"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
     public async Task<IEnumerable<BabyDetailsDto>> Handle(GetBabiesWithDetailsQuery request, CancellationToken cancellationToken)
     {
         var babies = await _babyReadOnlyRepository.GetAllWithDetailsAsync(cancellationToken);

@@ -17,6 +17,12 @@ internal class GetBabyByPersonalIdentityNumberQueryHandler : IRequestHandler<Get
         _mapper = mapper;
     }
 
+    /// <summary>
+    /// Obsługa metody pobierającej dziecko po numerze PESEL
+    /// </summary>
+    /// <param name="request"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns>Obiekt babyDto</returns>
     public async Task<BabyDto> Handle(GetBabyByPersonalIdentityNumberQuery request, CancellationToken cancellationToken)
     {
         var baby = await _babyRepository.GetByPersonalIdentityNumberAsync(request.PersonalIdentityNumber, cancellationToken);
