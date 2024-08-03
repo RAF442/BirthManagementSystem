@@ -8,7 +8,7 @@ using System.Net;
 
 namespace BirthManagementSystem.Presentation.Controllers;
 
-[Route("api/apgar_scores")]
+[Route("api/apgar_scores")] //Adres do endpointów udostępnianych w ramach tego kontrolera
 [ApiController]
 public class ApgarScoresController : Controller
 {
@@ -19,8 +19,13 @@ public class ApgarScoresController : Controller
         _mediator = mediator;
     }
 
+    /// <summary>
+    /// Pobranie dzieci
+    /// </summary>
+    /// <param name="id">Id wyniku w skali Apgar</param>
+    /// <returns>Dzieci z danym wynikiem w skali Apgar</returns>
     [HttpGet("{id}/babies")]
-    [SwaggerOperation("Get apgar score babies")]
+    [SwaggerOperation("Get apgar score babies")] //Opis edndpointa
     [ProducesResponseType(typeof(IEnumerable<BabyDto>), (int)HttpStatusCode.OK)]
     public async Task<ActionResult> GetApgarScoreBabies([FromRoute] int id)
     {
@@ -28,6 +33,11 @@ public class ApgarScoresController : Controller
         return Ok(result);
     }
 
+    /// <summary>
+    /// Metoda dodająca nowy wynik w skali Apgar
+    /// </summary>
+    /// <param name="command">Dodanie nowego wyniku w skali Apgar</param>
+    /// <returns></returns>
     [HttpPost]
     [SwaggerOperation("Add apgar score")]
     [ProducesResponseType((int)HttpStatusCode.Created)]
